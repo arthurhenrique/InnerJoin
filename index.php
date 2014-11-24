@@ -1,3 +1,4 @@
+<a href='banco.php'> criar banco</a> <br>
 
 <?php
 
@@ -6,7 +7,6 @@
 
 	mysql_select_db("banco") or die (mysql_error());
 	
-	echo "<a href='banco.php'> criar banco</a>";
 
 	$sql = "SELECT FUNCIONARIO.*, TELEFONE.* FROM FUNCIONARIO INNER JOIN TELEFONE ON FUNCIONARIO.ID_CARTEIRA_TRAB = TELEFONE.ID_CARTEIRA_TRAB";
 
